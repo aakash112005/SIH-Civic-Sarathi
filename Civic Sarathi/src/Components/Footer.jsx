@@ -1,5 +1,6 @@
 
 
+import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png"
 
 export default function Footer() {
@@ -20,27 +21,28 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-3">Product</h3>
             <ul className="space-y-2 text-gray-600">
-              <li><a href="/citizen-dashboard" className="hover:text-gray-900">Citizen</a></li>
-              <li><a href="/department-dashboard" className="hover:text-gray-900">Department</a></li>
-              <li><a href="/feedback" className="hover:text-gray-900">Feedback</a></li>
+              
+              <li><Link to={"/citizen-dashboard"} className="hover:text-gray-900">Citizen</Link></li>
+              <li><Link to={"/department-dashboard"} className="hover:text-gray-900">Department</Link></li>
+              <li><Link to={"/feedback"} className="hover:text-gray-900">Feedback</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-3">Company</h3>
             <ul className="space-y-2 text-gray-600">
-              <li><a href="/about" className="hover:text-gray-900">About</a></li>
-              <li><a href="/contact" className="hover:text-gray-900">Contact</a></li>
-              <li><a href="/careers" className="hover:text-gray-900">Careers</a></li>
+              <li><Link to={"/about"} className="hover:text-gray-900">About</Link></li>
+              <li><Link to={"/contact"} className="hover:text-gray-900">Contact</Link></li>
+              <li><Link to={"/careers"} className="hover:text-gray-900">Careers</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-3">Resources</h3>
             <ul className="space-y-2 text-gray-600">
-              <li><a href="/chatbot" className="hover:text-gray-900">Help Center</a></li>
-              <li><a href="/complaint-status" className="hover:text-gray-900">Status</a></li>
-              <li><a href="/privacy" className="hover:text-gray-900">Privacy</a></li>
+              <li><Link to={"/chatbot"} className="hover:text-gray-900">Help Center</Link></li>
+              <li><Link to={"/complaint-status"} className="hover:text-gray-900">Status</Link></li>
+              <li><Link to={"/privacy"} className="hover:text-gray-900">Privacy</Link></li>
             </ul>
           </div>
         </div>
