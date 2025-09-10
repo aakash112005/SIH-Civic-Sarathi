@@ -3,7 +3,7 @@ import { Lightbulb, RefreshCcw, User, Settings, Bot, Award, MessageCircle, Shiel
 import { MapPin } from "lucide-react" // icon for button
 import Footer from "../Components/Footer"
 import map from "../assets/map.png"
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 import HomeChart from "./HomeChart";
 import { useState,useEffect } from "react";
 // main.jsx
@@ -168,9 +168,10 @@ export default function HomePage() {
     <section className="px-20 py-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature, index) => (
+          <Link to={feature.link}>
           <a
             key={index}
-            href={feature.link}
+           
             className="p-6 border rounded-2xl shadow-sm hover:shadow-md transition bg-white flex flex-col justify-between"
           >
             <div className="flex items-start space-x-3">
@@ -184,6 +185,7 @@ export default function HomePage() {
               <ArrowRight className="w-4 h-4 text-gray-400" />
             </div>
           </a>
+          </Link>
         ))}
       </div>
     </section>
