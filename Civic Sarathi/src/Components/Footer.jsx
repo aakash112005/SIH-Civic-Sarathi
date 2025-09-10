@@ -32,7 +32,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-3">Company</h3>
             <ul className="space-y-2 text-gray-600">
               <li><Link to={"/about"} className="hover:text-gray-900">About</Link></li>
-              <li><Link to={"/contact"} className="hover:text-gray-900">Contact</Link></li>
+              <li><Link to={"/chatbot"} className="hover:text-gray-900">Contact</Link></li>
               <li><Link to={"/careers"} className="hover:text-gray-900">Careers</Link></li>
             </ul>
           </div>
