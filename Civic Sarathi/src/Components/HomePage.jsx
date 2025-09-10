@@ -115,7 +115,7 @@ export default function HomePage() {
 
 
 <section className="bg-white flex min-h-[500px]">
-  <div className="container mx-auto px-6 flex flex-col lg:flex-row items-start gap-10 py-[100px] lg:items-center">
+  <div className="container mx-auto px-[70px] flex flex-col lg:flex-row items-start gap-10 py-[100px] lg:items-center">
     {/* Left Content */}
     <div className="flex-1 text-center md:text-left">
       <h1 className="text-4xl font-extrabold text-gray-900 leading-tight mb-4">
