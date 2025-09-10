@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function Careers() {
   const jobs = [
@@ -59,12 +59,12 @@ function Careers() {
                 {job.type} • {job.location}
               </p>
               <p className="text-gray-600 mt-4 flex-1">{job.description}</p>
-              <a
-                href={job.applyLink}
+              <Link
+                to={job.applyLink}
                 className="mt-6 text-center inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
               >
                 Apply Now
-              </a>
+              </Link>
             </div>
           ))}
         </div>

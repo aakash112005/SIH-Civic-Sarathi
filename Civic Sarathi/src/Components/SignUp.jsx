@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SignupPage() {
   return (
@@ -86,9 +87,9 @@ function SignupPage() {
         {/* Footer */}
         <p className="text-sm text-gray-500 text-center mt-6">
           Already have an account?{" "}
-          <a href="/login" className="text-indigo-600 font-medium hover:underline">
+          <Link to={"/login"} className="text-indigo-600 font-medium hover:underline">
             Log In
-          </a>
+          </Link>
         </p>
       </div>
     </div>

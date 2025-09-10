@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
   return (
@@ -42,9 +43,9 @@ function LoginPage() {
               <input type="checkbox" className="h-4 w-4 rounded border-gray-300" />
               Remember me
             </label>
-            <a href="#" className="text-indigo-600 hover:underline">
+            <Link to={"#"} className="text-indigo-600 hover:underline">
               Forgot password?
-            </a>
+            </Link>
           </div>
 
           {/* Button */}
@@ -59,9 +60,9 @@ function LoginPage() {
         {/* Footer */}
         <p className="text-sm text-gray-500 text-center mt-6">
           Don’t have an account?{" "}
-          <a href="signup" className="text-indigo-600 font-medium hover:underline">
+          <Link to={"signup"} className="text-indigo-600 font-medium hover:underline">
             Sign Up
-          </a>
+          </Link>
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaMicrophone } from "react-icons/fa";
@@ -160,9 +161,9 @@ export default function ReportIssue() {
         <input type="checkbox" id="terms" />
         <label htmlFor="terms">
           I agree to the{" "}
-          <a href="#" className="text-blue-600 underline">
+          <Link to={"#"} className="text-blue-600 underline">
             Terms and Conditions
-          </a>
+          </Link>
         </label>
       </div>
 
