@@ -60,8 +60,8 @@ function LoginPage() {
         {/* Footer */}
         <p className="text-sm text-gray-500 text-center mt-6">
           Don’t have an account?{" "}
-          <Link to={"\signup"} className="text-indigo-600 font-medium hover:underline">
-            Sign Up
+          <Link to={"/signup"} className="text-indigo-600 font-medium hover:underline">
+                      Signup
           </Link>
         </p>
       </div>
